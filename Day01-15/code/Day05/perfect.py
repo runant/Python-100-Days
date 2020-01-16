@@ -18,3 +18,15 @@ for num in range(1, 10000):
                 result += num // factor
     if result == num:
         print(num)
+
+       
+“”“
+另外一种
+”“”
+for x in range(1, 10000):
+    num = 0
+    for  i in range(1, x):
+        if  x % i == 0:
+            num += i
+    if num == x:
+        print(x)
